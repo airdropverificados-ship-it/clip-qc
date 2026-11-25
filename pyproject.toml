@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "clip-qc"
+version = "1.0.0"
+description = "Check video clips before you publish them"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Julio Barallobre Verdecia" }]
+requires-python = ">=3.10"
+
+[project.scripts]
+clip-qc = "clip_qc.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["clip_qc*"]

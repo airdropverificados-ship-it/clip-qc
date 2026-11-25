@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+"""clip-qc launcher script (installed as the `clip-qc` command)."""
+
+import sys
+from clip_qc.cli import main
+
+if __name__ == "__main__":
+    sys.exit(main())
